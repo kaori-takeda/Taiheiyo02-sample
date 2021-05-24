@@ -119,6 +119,7 @@ h3{
 	padding-top: 120px;
 	margin: 0 auto; 
 	margin-top: 0px;  
+
 }
 
 .main{
@@ -187,6 +188,12 @@ h3{
 /*スライド　ここまで
 ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
 
+.link-before_bnr{
+	width: 900px;
+	margin: 30px auto 0;
+}
+
+
 .link-bnr{
 	display: flex;
 	width: 700px;
@@ -195,7 +202,7 @@ h3{
 
 .link-bnr img{
 	width: 100%;
-	padding: 30px 10px 0;
+	padding: 10px 30px 0;
 
 }
 
@@ -260,12 +267,80 @@ h3{
 
 /*コンセプト　ページ
 ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
-.concept-contents,.profile-box{
+
+
+.concept-box{
+	width: 800px;
+	margin: 0px auto;
+	padding: 10px;
+}
+.concept-contents{
+	width:47.5%;
+	margin: 0px auto;
+	padding: 0px;
+}
+
+
+.concept h4,.concept-box h4{
+	font-size: 1.2rem;
+	width: 100%;
+	margin: 20px auto;
+	padding: 0.3rem 1rem  0.3rem 1rem;
+	background-color: #0068B7;
+	color:#fff;
+}
+
+figure {
+	margin-top:-20px;
+	padding: 10px; 
+	text-align: left;
+	float: left;
+}
+
+
+.profile-box{
 	width: 800px;
 	margin: 0px auto;
 	display: flex;
 	justify-content: space-between;
 }
+
+.about{
+	width: 100%;
+	margin:20px 10px 0 10px; 
+}
+
+
+.message{
+	width: 100%;
+	margin:10px 0; 
+	padding: 10px;
+}
+
+.message-01{
+	width: 100%;
+	padding: 10px;
+}
+
+
+.message-01 h5 {
+	color: #0068B7;
+	font-size: 1rem;
+}
+
+.message-box{
+	width: 800px;
+	margin: 0 auto;
+	text-align: left;
+	margin-bottom: 20px;
+}
+
+
+.message-box img{
+	margin: 20px auto;
+	margin-bottom: 20px;
+}
+
 
 .message-box{
 	width: 700px;
@@ -289,33 +364,13 @@ h3{
 }
 
 .message-box p{
-	font-size: 1.5rem;
+	font-size: 1rem;
 	margin-top:5px; 
+	text-align: left;
 
 		}
 
 
-
-.message{
-	margin-top: 10px;
-	width: 50%;
-}
-
-.message p{
-	padding: 10px;
-	overflow-wrap: break-word;
-	word-wrap: break-word;
-}
-
-.about{
-	width: 45%;
-	margin-top:20px; 
-}
-
-.about img{
-	width: 100%;
-	margin-bottom: 5px; 
-}
 
 .project{
 	width: 800px;
@@ -397,7 +452,6 @@ h3{
   padding-bottom: 25px;
   max-width: 700px;
   display: flex;
-  align-items: center;
 }
 
 .List-Item-Content.one {
@@ -408,50 +462,70 @@ h3{
   margin-right: 20px;
   width: 50px;
   height: 50px;
-  line-height: 50px;
   text-align: center;
   background: #0068B7;
   color: #fff;
   font-size: 2rem;
 }
 
-.List-Item-Content-Number-Line {
-  position: absolute;
-  top: -105%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  width: 4px;
-  height: 120px;
-  background: #0068B7;
+.List-Item-point-text{
+	width: 600px;
+	margin: 0 auto;
 }
 
-.List-Item-Content-Number-Line2 {
-  position: absolute;
-  top: -60%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  width: 4px;
-  height: 70px;
-  background: #0068B7;
+.List-Item-point-text ul{
+	list-style: none;
+	background-color: #cce9ff;
+  	padding: 1em 1em 1em 1em;
+	}
+
+.List-Item-point-text p{
+	font-size: 1.2rem;
+	color: #0068B7;
+	font-weight: bold; 
+}
+
+.List-Item-point-text li{
+	margin: 10px auto;
+	text-align: left;
+	padding: 0.3rem;
+	padding-left: 1em;
+    text-indent: -1em;
+    border-bottom:2px dashed;
+    border-color:#fff; /* 線の色 */
+}
+
+
+
+.List-Item-point{
+	margin-top:20px; 
+	width: 600px;
+    padding: 5px;
+	text-align: center;
+	background-color: #0068B7;
+	  color: #fff;
 }
 
 .List-Item-Content-Title {
+	margin: 5px 0; 
   margin-right: 20px;
   flex-basis: 220px;
   color: #0068B7;
-  font-size: 20px;
+  font-size: 30px;
 }
 
+
 .List-Item-Content-Description {
+  width:600px; 
   line-height: 1.5;
   font-size: 16px;
 }
 
+
 .flow-btn{
-	width: 750px;
 	height: 30px;
 	text-align: right;
-	margin: 0 0 30px 0;
+	margin: 20px 0 30px 0;
 }
 
 /*コンタクト
@@ -777,6 +851,10 @@ td{
 		object-fit: cover;
 	}
 
+	figure {
+		clear: both;
+	}
+
 
 	.concept-contents,.project-photo,.link-bnr{
 		flex-direction: column; 
@@ -796,7 +874,7 @@ td{
 		
 	.main,.concept-contents,.message,.about,.history-box,.acd-label,.faq-box,
 	.project,.access-box,.request-box,.side,.plofile-box,.form-box,.link-bnr,
-	.company-box{
+	.company-box,.flow-contents,.concept-box{
 		width: 100%;
 		text-align: center;
 		margin: 0 auto;
@@ -804,9 +882,12 @@ td{
 
 	}
 
-	.flow-contents{
+
+	.link-before_bnr{
 		width: 100%;
+		height: 200px;
 	}
+
 
 	.message-box{
 		width: 90%;
@@ -924,11 +1005,15 @@ td{
 	/*フロー
 ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
   .List-Item {
-    border-top: 0;
+    border-top: 1;
+    margin-top:10px; 
   }
 
+
+
   .List-Item-Content {
-    padding-top: 10px;
+  	width: 100%;
+    padding: 10px;
     padding-bottom: 15px;
     flex-wrap: wrap;
   }
@@ -941,18 +1026,10 @@ td{
     font-size: 24px;
   }
 
-
-  .List-Item-Content-Number-Line {
-    top: -200%;
-    width: 2px;
-    height: 160px;
+  .List-Item-point,.List-Item-point-text,.List-Item-point-text ul{
+  	width: 100%;
   }
 
-  .List-Item-Content-Number-Line2 {
-    top: -150%;
-    width: 2px;
-    height: 120px;
-  }
 
   .List-Item-Content-Title {
     max-width: 100%;
@@ -961,19 +1038,20 @@ td{
 	}
 
   .List-Item-Content-Description {
+  	margin-top:-12%; 
   	text-align: left;
     margin-left: 60px;
-    max-width: 100%;
-    font-size: 0.9rem;
+    width: 100%;
+    font-size: 1rem;
     overflow-wrap: break-word;
 	word-wrap: break-word;
 	}
 
 	.flow-btn{
-	width: 80%; 
+	width: 100%; 
 	height: 30px;
 	text-align:left;
-	margin: 0 0 30px 55px;
+	margin: 20px 0;
 }
 
 
