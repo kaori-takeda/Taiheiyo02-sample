@@ -188,6 +188,17 @@ h3{
 /*スライド　ここまで
 ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
 
+.top-concept {
+	margin-top: 20px; 
+	font-family: serif;
+	font-size: 2rem;
+	text-align:center;
+
+}
+
+/*TOP　バナー
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
+
 .link-before_bnr{
 	width: 900px;
 	margin: 30px auto 0;
@@ -196,16 +207,18 @@ h3{
 
 .link-bnr{
 	display: flex;
-	width: 700px;
-	margin: 0 auto;
+	width: 800px;
+	margin: 50px auto;
+	padding: 10px;
 }
 
 .link-bnr img{
-	width: 100%;
-	padding: 10px 30px 0;
-
+	width: 199%;
+	padding: 10px 20px 0;
 }
 
+/*TOP　バナー以外
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
 .side {
 	width: 900px;
 	margin: 0 auto; 
@@ -213,12 +226,24 @@ h3{
 }
 
 
-.more p{
-	text-align: right;
+.more {
+	width: 800px;
+	margin: 0 auto; 
+	text-align: center;
+	padding: 10px;
+	background: #f5f5f5;
 
 	margin-top: -30px;/*文字位置指定*/
 	margin-bottom: 30px; 
 }
+
+.blog-bnr{
+	width: 400px;
+	text-align: center;
+	margin: 50px auto;
+
+}
+
 /*TOP ページ ここまで
 ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
 
@@ -268,7 +293,6 @@ h3{
 /*コンセプト　ページ
 ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
 
-
 .concept-box{
 	width: 800px;
 	margin: 0px auto;
@@ -280,11 +304,17 @@ h3{
 	padding: 0px;
 }
 
+.concept-box strong{
+	font-family: serif;
+	font-size: 2em;
+	text-align:center;
+} 
+
 
 .concept h4,.concept-box h4{
 	font-size: 1.2rem;
 	width: 100%;
-	margin: 20px auto;
+	margin: 10px auto 10px;
 	padding: 0.3rem 1rem  0.3rem 1rem;
 	background-color: #0068B7;
 	color:#fff;
@@ -305,11 +335,10 @@ figure {
 	justify-content: space-between;
 }
 
-.about{
+.about,.concept-photo{
 	width: 100%;
 	margin:20px 10px 0 10px; 
 }
-
 
 .message{
 	width: 100%;
@@ -317,58 +346,26 @@ figure {
 	padding: 10px;
 }
 
-.message-01{
+.concept-message{
 	width: 100%;
 	padding: 10px;
 }
 
 
-.message-01 h5 {
+.concept-message h5 {
 	color: #0068B7;
 	font-size: 1rem;
 }
 
 .message-box{
-	width: 800px;
+	width: 750px;
 	margin: 0 auto;
 	text-align: left;
 	margin-bottom: 20px;
 }
 
 
-.message-box img{
-	margin: 20px auto;
-	margin-bottom: 20px;
-}
 
-
-.message-box{
-	width: 700px;
-	margin: 0 auto;
-	text-align: center;
-	margin-bottom: 20px;
-}
-
-.message-box ul{
-  background: #87ccff;
-  box-shadow: 0px 0px 0px 10px #87ccff;/*線の外側*/
-  border: dashed 2px #fff;/*破線*/
-  padding: 1em 0.5em 1em 2em;
-  margin-top:1.5rem; 
-	}
-
-.message-box li{
-	margin: 10px 100px;
-	text-align: left;
-	font-size: 1.2rem;
-}
-
-.message-box p{
-	font-size: 1rem;
-	margin-top:5px; 
-	text-align: left;
-
-		}
 
 
 
@@ -402,6 +399,13 @@ figure {
 	padding: 10px 20px;
 
 }
+
+.button-gray{
+	padding: 10px 30px;
+	background: #432;
+	color: #fff;
+}
+
 
 .profile-box{
 	width: 700px;
@@ -537,6 +541,7 @@ figure {
 }
 
 .button-blue{
+	text-align: right;
 	font-size: 1rem;
 	background: #87ccff;
 	color: #fff;
@@ -550,7 +555,7 @@ figure {
 	}
 
 .mail-btn,.link-btn{
-	text-align: center;
+	text-align: right;
 	margin: 20px 0;
 
 }
@@ -569,6 +574,9 @@ figure {
 
 .form-box p,.request-box p{
 	padding: 10px;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	text-align: justify;
 }
 
 .design-btn{
@@ -620,13 +628,14 @@ td{
 ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
 .faq-box{
 	width: 800px;
-	margin: 0 auto;
+	margin: 0 auto 60px;
 
 }
 .acd-check{
     display: none;
 }
 .acd-label{
+	height: 100%;
     background: #0068B7;
     color: #fff;
     display: block;
@@ -644,10 +653,15 @@ td{
     visibility: hidden;
 }
 .acd-check:checked + .acd-label + .acd-content{
-    height: 40px;
+    height: 100%;
     opacity: 1;
     padding: 10px;
     visibility: visible;
+  	text-indent: -1.25em;
+  	padding-left: 2em;
+  	overflow-wrap: break-word;
+  	word-wrap: break-word;
+  	 text-align: justify;
 }
 
 /*モバイル版
@@ -806,7 +820,7 @@ td{
 /*  トップ　一覧 */
 	.more{
 		width: 95%;
-		margin-top: 30px;
+		margin-top: -50px;
 	}
 
 	/*  grid */
@@ -852,8 +866,11 @@ td{
 	}
 
 	figure {
+		margin-left: -10px; 
 		clear: both;
+		padding: 0;
 	}
+
 
 
 	.concept-contents,.project-photo,.link-bnr{
@@ -866,70 +883,78 @@ td{
 		margin: 0 auto;
 	}
 
+	/*  	外枠　　　　　　　　　　 
+	ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
 	.top-main{
 		width: 100%;
 		padding-top:50px;
 		margin-top:30px; 
 	}
-		
-	.main,.concept-contents,.message,.about,.history-box,.acd-label,.faq-box,
-	.project,.access-box,.request-box,.side,.plofile-box,.form-box,.link-bnr,
-	.company-box,.flow-contents,.concept-box{
+	
+	.main,.concept-contents,.message,.about,.history-box,.acd-label,
+	.project,.access-box,.request-box,.side,.plofile-box,.form-box,
+	.company-box,.flow-contents{
 		width: 100%;
 		text-align: center;
 		margin: 0 auto;
 		padding: 0;
-
 	}
 
-
-	.link-before_bnr{
-		width: 100%;
-		height: 200px;
+	.faq-box,.concept-box{
+	width: 95%;
 	}
-
-
 	.message-box{
 		width: 90%;
 	}
-
-	.message-box li{
-		width: 85%;
-		text-align: left;
-		margin: 10px auto;
-		font-size: 1.2rem;
-	}
-
-	.acd-label{
-		height: 50px;
-		padding-top:12px; 
-		padding-left:10px; 
-		margin-bottom: 5px; 
-		text-align: left;
-	}
-
-	.acd-content{
-		text-align: left;
-	}
-
-
-	.side {
-		margin-top: 30px;
-	}
-
 
 	.form-box{
 		text-align: center;
 		margin: 0 auto 20px;
 		padding-bottom:10px; 
 	}
+	.side {
+		margin-top: 30px;
+	}
 
 
-	.request-box img{
+
+	/* バナー　　　　　　　　　 
+	ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
+	.link-before_bnr{
 		width: 90%;
-		padding: 0px;
-		margin-bottom: 10px; 
+		margin:20px auto 5px; 
+	}
 
+	.link-bnr {
+	width: 90%;
+	margin:0 auto;
+	padding: 0;
+	}
+	.link-bnr img{
+	width: 100vw;
+	padding: 0;
+	}
+
+	.blog-bnr{
+	width: 90%;
+	margin-bottom: 20px;
+	}
+
+
+	/* FAQ・ボタン
+	ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
+	.acd-label{
+		padding-top:10px; 
+		padding-left:10px; 
+		padding-bottom: 10px; 
+		margin-bottom: 5px; 
+		text-align: left;
+		text-indent: -1.25em;
+  		padding-left: 2em;
+	}
+
+	.acd-content{
+		text-align: left;
 	}
 
 	.form-box img{
@@ -947,9 +972,16 @@ td{
 	.access-map{
 		width: 90%;
 		margin:0 auto; 
+		margin-bottom: 50px;
 	}
 
-	.message p ,.project p,.project p,.request-box p,.form-box p{
+	/* 文字
+	ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
+	.top-concept{
+		width: 100%;
+		font-size: 130%;}
+
+	.message p ,.project p,.request-box p,.form-box p{
 		text-align: left;
 		width: 90%;
 		margin: 5px auto;
@@ -958,9 +990,15 @@ td{
 		text-align: justify;
 	}
 
-	.message li{
-		text-align: left;
-	}
+.concept-message ,.concept-box p{
+	width: 100%;
+	text-align:left;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	text-align: justify;
+	margin-bottom: 10px;
+}
+
 	.about img{
 		width: 90%;
 		margin: 0 auto;
@@ -1014,7 +1052,7 @@ td{
   .List-Item-Content {
   	width: 100%;
     padding: 10px;
-    padding-bottom: 15px;
+    padding-bottom: 50px;
     flex-wrap: wrap;
   }
 
