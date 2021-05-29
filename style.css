@@ -66,6 +66,10 @@ img{
 	border-bottom: 2px solid #0068B7;
 }
 
+.page-header p{
+	text-indent: -1em;
+	padding-left: 2em;
+	
 .wrapper{
 	max-width: 1100px;
 	margin: 0 auto;
