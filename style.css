@@ -911,7 +911,7 @@ td{
 	}
 	
 	.main,.concept-contents,.message,.about,.history-box,.acd-label,
-	.project,.access-box,.request-box,.side,.plofile-box,.form-box,
+	.project,.access-box,.request-box,.side,.plofile-box,.form-box,.message-box,
 	.company-box,.flow-contents{
 		width: 100%;
 		text-align: center;
@@ -919,6 +919,9 @@ td{
 		padding: 0;
 	}
 
+	.message-box{
+		padding: 10px;
+	}
 	.faq-box,.concept-box{
 		width: 100%;
 	}
