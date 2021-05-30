@@ -208,13 +208,12 @@ h3{
 .link-bnr{
 	display: flex;
 	width: 800px;
-	margin: 50px auto;
-	padding: 10px;
+	margin: 30px auto;
 }
 
 .link-bnr img{
 	width: 100%;
-	padding: 10px 20px 0;
+	padding: 0px 10px;
 }
 
 /*TOP　バナー以外
@@ -263,7 +262,7 @@ h3{
 	
 
 }
-.item a:hover img{
+.item a:hover img,.link-bnr a:hover img{
   opacity: 0.6;
   transition-duration: 0.3s;
 }
@@ -543,6 +542,7 @@ figure {
 ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
 .form-box{
 	width: 800px;
+	min-height: 500px;
 	margin: 0 auto;
 	padding-bottom: 30px;
 }
@@ -670,6 +670,22 @@ td{
   	word-wrap: break-word;
   	 text-align: justify;
 }
+
+/*お手伝いサービス
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
+	.service-box{
+		width: 800px;
+		margin: 0px auto;
+		padding: 10px;	
+	}
+
+	.service-text{
+		margin: 0 auto;
+		text-indent: -1.25em;
+		padding-left: 2em;
+		overflow-wrap: break-word;
+		word-wrap: break-word;
+	}
 
 /*モバイル版
 ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
@@ -919,7 +935,7 @@ td{
 	.message-box{
 		padding: 10px;
 	}
-	.faq-box,.concept-box{
+	.faq-box,.concept-box,.service-box{
 		width: 100%;
 	}
 
@@ -973,15 +989,21 @@ td{
 
 	.button-blue{
 		margin: 0 auto;
+		text-align: center;
 	}
 
 	.vr-btn{
 	margin-top:0px; 
 }
 
+	.button-gray{
+		margin: 0 auto;
+		text-align: center;
+	}
 
 
-	.mail-btn,.link-btn{
+
+	.link-btn{
 	text-align: center;
 	margin: 20px 0;
 
@@ -993,6 +1015,14 @@ td{
 		margin-bottom: 50px;
 	}
 
+
+	.flow-btn{
+		width: 100%; 
+		height: 30px;
+		text-align:center;
+		margin: 20px auto;
+	}
+	
 	/* 文字
 	ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
 	.top-concept p{
@@ -1002,7 +1032,7 @@ td{
 	}
 
 
-	p,.concept-message {
+	p,.concept-message ,.service-text{
 		text-align: left;
 		width: 98%;
 		margin: 5px auto;
@@ -1017,6 +1047,7 @@ td{
 	.more p,footer p{
 		text-align: center;
 	}
+
 
 
 	/* 文字
@@ -1124,13 +1155,6 @@ td{
     overflow-wrap: break-word;
 	word-wrap: break-word;
 	}
-
-	.flow-btn{
-	width: 100%; 
-	height: 30px;
-	text-align:left;
-	margin: 20px 0;
-}
 
 
 }
