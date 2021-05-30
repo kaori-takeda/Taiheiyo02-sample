@@ -675,7 +675,7 @@ td{
 ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
 	.service-box{
 		width: 800px;
-		margin: 0px 50px;
+		margin: 0px 50px　30px;
 		padding: 10px;	
 	}
 
@@ -934,9 +934,15 @@ td{
 	.message-box{
 		padding: 10px;
 	}
-	.faq-box,.concept-box,.service-box{
+	.faq-box,.concept-box{
 		width: 100%;
 	}
+
+	.service-box{
+		width: 100%;
+		margin: 0;
+	}
+
 
 	.form-box{
 		text-align: center;
