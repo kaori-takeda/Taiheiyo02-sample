@@ -673,6 +673,28 @@ td{
 		margin-bottom: 30px;
 	}
 
+	.app-box{
+		width: 700px;
+		margin: 20px auto ;
+		border: 2px solid #0068B7;
+		border-radius: 5px;
+		padding: 30px 30px 0 30px;
+		position: relative;
+		}
+		
+	.app-box::before {
+		background-color: #fff;
+		color: #0068B7;
+		content: "アプリ紹介";
+		font-weight: bold;
+		left: 35px;
+		padding: 3px 8px 0 30px;
+		position: absolute;
+		top: -15px;
+		}
+
+	}
+
 /*モバイル版
 ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
 @media (max-width: 640px){
