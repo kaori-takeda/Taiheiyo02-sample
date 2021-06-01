@@ -1001,9 +1001,8 @@ td{
 
 
 	.app-box::before {
-		text-align: center;
-		left: 35%;
-		right:35%;
+		left: 31%;
+		right: 31%;
 		top: -15px;
 		padding: 0 2%;
 		}
