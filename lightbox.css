@@ -202,3 +202,14 @@ body.lb-disable-scrolling {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
+
+
+
+/*モバイル版
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
+@media (max-width: 640px){
+  .lightbox {
+    width: 100%;
+    margin-top: 50%;
+  }
+}
