@@ -1247,16 +1247,25 @@ TABLE
 		margin: 0 auto;
 	}
 
+	.course-box{
+		width: 80%;
+
+	}
 	.course-item-tegaki{
 		width: 50%;
 		margin: 0 auto;
 	}
-	.service-text,.app-box,.service-sample,.course-title,.service-text0{
+	.service-text,.service-sample,.course-title,.service-text0{
 		width: 95%;
 		margin: 0 auto;
 	}
+
+	.app-box{
+		width: 80%;
+		margin: 0 auto;
+	}
 	.app-photo{
-		width: 100%;
+		width: 60%;
 		margin:0 auto;
 		text-align: center;
 		padding: 0;
@@ -1312,6 +1321,7 @@ TABLE
 	.course-item{
 		width: 45%;
 	}
+
 
 	/* バナー　　　　　　　　　 
 	ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
